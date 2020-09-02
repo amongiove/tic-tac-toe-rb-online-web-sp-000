@@ -128,6 +128,7 @@ def winner(board)
 end
 
 def play(board)
+  puts "play!"
   while over?(board) != true
     turn(board)
   end
