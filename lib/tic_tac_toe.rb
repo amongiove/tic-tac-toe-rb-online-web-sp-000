@@ -42,8 +42,8 @@ end
 
 def turn_count(board)
   count = 0
-  board.each do |index|
-    if index != " " || index != "" || index != nil
+  board.each do |location|
+    if position_taken(board, location) != nil
       count += 1
     end
   end
