@@ -20,8 +20,8 @@ def move(board, index, current_player)
   board[index] = current_player
 end
 
-def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
+def position_taken?(board, index)
+  board[index] != " " && board[index] != ""
 end
 
 def valid_move?(board, index)
@@ -42,8 +42,8 @@ end
 
 def turn_count(board)
   count = 0
-  board.each do |location|
-    if position_taken?(board, location) != nil
+  board.each do |index|
+    if |index| != "" && |index| != " " && |index| != nil
       count += 1
     end
   end
