@@ -49,6 +49,8 @@ def turn_count(board)
       count += 1
     end
   end
+    puts "count"
+    puts count
     return count
 end
 
