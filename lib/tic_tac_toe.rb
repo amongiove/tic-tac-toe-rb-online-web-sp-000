@@ -41,8 +41,8 @@ def turn(board)
 end
 
 def turn_count(board)
-  count = 0
   board.each do |index|
+    count = 0
     if index != "" && index != " " && index != nil
       count += 1
     end
@@ -52,9 +52,9 @@ end
 
 def current_player(board)
   if turn_count(board).odd? == true
-    return "O" # e.g 1 - x goes first
+    return "x" # e.g 1 - x goes first
   elsif turn_count(board).even? == true
-    return "X" #eg 2 - O goes second
+    return "O" #eg 2 - O goes second
   end
 end
 
