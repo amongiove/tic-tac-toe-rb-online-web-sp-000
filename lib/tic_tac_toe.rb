@@ -4,8 +4,6 @@ WIN_COMBINATIONS = [
   [0,1,2],[3,4,5],[6,7,8],[0,4,8],[2,4,6],[0,3,6],[1,4,7],[2,5,8]
 ]
 
-count = 0
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -43,8 +41,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  # count = 0
-  puts "turn count"
+  count = 0
   board.each do |index|
     if index != "" && index != " " && index != nil
       count += 1
@@ -128,7 +125,6 @@ def winner(board)
 end
 
 def play(board)
-  puts "play!"
   while over?(board) != true
     turn(board)
   end
