@@ -39,9 +39,10 @@ def turn(board)
 end
 
 def turn_count(board)
-  turn_count = 0
-  if board[index] != nil
-    turn_count += 1
+  counter = 0
+  until counter == 9
+    turn(board)
+    counter += 1
   end
 end
 
@@ -120,9 +121,4 @@ def winner(board)
 end
 
 def play(board)
-  counter = 0
-  until counter == 9
-    turn(board)
-    counter += 1
-  end
 end
