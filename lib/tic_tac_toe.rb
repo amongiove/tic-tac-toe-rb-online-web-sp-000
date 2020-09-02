@@ -51,10 +51,10 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board) % 2 == 0
-    return "O"
-  elsif turn_count(board) % 2 != 0
-    return "X"
+  if turn_count(board) % 2 != 0
+    return "X" # e.g 1 - x goes first
+  elsif turn_count(board) % 2 == 0
+    return "O" #eg 2 - O goes second
   end
 end
 
