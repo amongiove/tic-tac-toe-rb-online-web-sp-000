@@ -125,4 +125,3 @@ def play(board)
     turn(board)
     counter += 1
   end
-end
