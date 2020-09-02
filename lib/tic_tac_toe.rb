@@ -43,7 +43,7 @@ end
 def turn_count(board)
   count = 0
   board.each do |index|
-    if |index| != "" && |index| != " " && |index| != nil
+    if index != "" && index != " " && index != nil
       count += 1
     end
   end
