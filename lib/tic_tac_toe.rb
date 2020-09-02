@@ -42,12 +42,12 @@ end
 
 def turn_count(board)
   board.each do |index|
-    turn_count = 0
+    count = 0
     if index != " " || index != "" || index != nil
-      turn_count += 1
+      count += 1
     end
   end
-  turn_count(board)
+    return count
 end
 
 def current_player(board)
