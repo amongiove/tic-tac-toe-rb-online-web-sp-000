@@ -133,6 +133,4 @@ def play(board)
   elsif draw?(board) == true
     puts "Cat's Game!"
   end
-puts display_board(board)
-puts board
 end
