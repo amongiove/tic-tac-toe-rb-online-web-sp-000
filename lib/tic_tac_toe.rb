@@ -44,13 +44,12 @@ end
 
 def turn_count(board)
   # count = 0
+  puts "turn count"
   board.each do |index|
     if index != "" && index != " " && index != nil
       count += 1
     end
   end
-    puts "count"
-    puts count
     return count
 end
 
