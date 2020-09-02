@@ -17,7 +17,7 @@ def display_board(board)
   def move(board, index, current_player = "X")
     board[index] = current_player
   end
-  
+
 def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
@@ -44,7 +44,7 @@ def turn_count(board)
     turn_count += 1
   end
 end
-  
+
 def play(board)
   counter = 0
   until counter == 9
