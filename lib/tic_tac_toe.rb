@@ -41,8 +41,9 @@ def turn(board)
 end
 
 def turn_count(board)
+  board.each do |index|
   turn_count = 0
-  if board[index] != nil
+  if |index| != nil
     turn_count += 1
   end
 end
