@@ -46,8 +46,8 @@ def turn_count(board)
     if index != " " || index != "" || index != nil
       turn_count += 1
     end
-    return turn_count
   end
+  return turn_count
 end
 
 def current_player(board)
