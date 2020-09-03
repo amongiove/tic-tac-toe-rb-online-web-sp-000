@@ -52,9 +52,9 @@ end
 
 def current_player(board)
   if turn_count(board).odd? == true
-    return "O" # e.g 1 - x goes first
+    return "X" # e.g 1 - x goes first
   elsif turn_count(board).even? == true
-    return "X" #eg 2 - O goes second
+    return "O" #eg 2 - O goes second
   end
 end
 
